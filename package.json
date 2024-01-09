@@ -1,5 +1,5 @@
 {
-  "name": "multer-azure",
+  "name": "multer-azure-content",
   "version": "2.0.3",
   "description": "Streaming multer storage engine for Azure Blob storage.",
   "main": "index.js",
