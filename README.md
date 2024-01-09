@@ -1,4 +1,4 @@
-# Multer Azure
+# Multer Azure Content
 This is a multer storage engine for Azure's blob storage. Adapted from the main multer-azure project to allow add actual mimetype while saving the blob to azure storage.
 
 ## Installation
