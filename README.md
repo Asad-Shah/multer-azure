@@ -1,16 +1,16 @@
 # Multer Azure
-This is a multer storage engine for Azure's blob storage.
+This is a multer storage engine for Azure's blob storage. Adapted from the main multer-azure project to allow add actual mimetype while saving the blob to azure storage.
 
 ## Installation
 ```sh
-npm install --save multer-azure
+npm install --save multer-azure-content
 ```
 
 ## Usage
 ```javascript
 var express = require('express')
 var multer = require('multer')
-var multerAzure = require('multer-azure')
+var multerAzure = require('multer-azure-content')
 
 var app = express()
 
@@ -34,7 +34,7 @@ app.post('/', upload.any(), function (req, res, next) {
 ```
 
 ### File Information
-`multer-azure` will return the following information in each file in the `req.files` parameter:
+`multer-azure-content` will return the following information in each file in the `req.files` parameter:
 
 Key|Description
 ---|---
@@ -49,7 +49,7 @@ Key|Description
 
 ### File Naming
 
-Files in an Azure container have to have a unique name. `multer-azure` allows you to customize the blobPath.
+Files in an Azure container have to have a unique name. `multer-azure-content` allows you to customize the blobPath.
 
 Simply provide a blobPathResolver, the same way as what you do with multer.diskStorage.
 
